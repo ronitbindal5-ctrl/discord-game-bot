@@ -146,7 +146,7 @@ async def random_deck(ctx):
 
     # --- New Bot Command: !counter_pick ---
 
-@bot.hybrid_command(name='counter_pick', description='Suggests heroes good at countering the specified hero', help='!counter_pick [HeroName] - Get a counter\ pick of a hero.')
+@bot.hybrid_command(name='counter_pick', description='Suggests heroes good at countering the specified hero', help='!counter_pick [HeroName] - Get a counter pick of a hero.')
 @discord.app_commands.autocomplete(hero_name=hero_autocomplete)
 async def counter_pick(ctx, *, hero_name):
     """Suggests counters for a given hero based on predefined matchups."""
