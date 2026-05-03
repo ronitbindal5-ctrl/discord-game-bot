@@ -105,7 +105,7 @@ async def hero_stats(ctx, *, hero_name):
         await ctx.send(f"❌ Hero *{hero_name}* not found. Check the spelling!")
 
 # REPLACE THE OLD @bot.command(name='random_deck') WITH THIS:
-@bot.hybrid_command(name='random_deck', description='Generates a balanced 5-hero deck (3 Attacker, 1 Defender, 1 Wildcard)', help='!random_deck - Get a random\ deck.')
+@bot.hybrid_command(name='random_deck', description='Generates a balanced 5-hero deck (3 Attacker, 1 Defender, 1 Wildcard)', help='!random_deck - Get a random deck.')
 async def random_deck(ctx):
     """Generates a role-balanced 5-hero deck."""
     
